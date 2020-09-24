@@ -1,43 +1,45 @@
-* { /* Gælder alt på hele siden */
-  box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+/* ------------------------------------------------------------- */
+/* BOOTSTRAP START */
+
+/* Her retter vi standard farverne i Bootstrap */
+$theme-colors: (
+	"primary": #7fd900,
+	"secondary": #0f0,
+	"danger": #ff4136,
+	"success": #050,
+	"info": #894,
+	"warning": #823,
+	"light": #ddd,
+	"dark": #333
+);
+
+/* Her retter vi margin og padding (p-1, p-2, pb-1.... og m-1, m-2, mt-1 osv) */
+$spacer: 100px;
+
+/* Her importerer vi Bootstrap i vores egen css - Dvs bootstrap css filen skal ikke længere være i vores HTML dokument */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Her retter vi noget fra bootstrap som ikke kan ændres via variabler */
+ul ol {
+	margin-bottom: 20px;
 }
 
-/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+/* BOOTSTRAP SLUT */
+/* ------------------------------------------------------------- */
+/* EGEN CSS START */
 
-body {
-  margin: 0; /* Ingen kanter i siden af browser */
-}
+/* Her henter vi vores eget stylesheet (det der før hed styles.css) - nu har vi kaldt det _myStyles.scss */
+@import "myStyles";
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; /* Ingen ydre margen fra overskrifter */
-  padding: 0; /* Ingen indre margen fra overskrifter */
-}
+/* EGEN CSS SLUT */
+/* ------------------------------------------------------------- */
+/* EGEN RESPONSIVE CSS START */
 
-ul, ol {
-  margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
-  padding: 0; /* Ingen indre margen fra lister */
-  list-style-position: inside; /* List punkter står på linje */
-}
+/* Her henter vi vores tablet version _tablet.scss */
+@import "tablet";
 
-li {
-  margin: 0; /* Ingen ydre margen fra listpunkter */
-}
+/* Her henter vi vores computer version _tablet.scss */
+@import "computer";
 
-p {
-  margin: 0; /* Ingen ydre margen fra paragraffer */
-  padding: 0; /* Ingen indre margen fra paragraffer */
-}
-
-/* Sikrer billeder er responsive */
-img {
-  display: block; /* Billeder er et element (laver linjeskift) */
-  max-width: 100%; /* Bredde må maks fylde 100% */
-  height: auto; /* Højden skal tilpasse sig */
-}
-
-.transition {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+/* EGEN RESPONSIVE CSS SLUT */
+/* ------------------------------------------------------------- */
