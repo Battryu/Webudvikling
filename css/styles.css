@@ -11,14 +11,14 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #497DCC;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #8A0BDB;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #01FCBA;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -7211,6 +7211,52 @@ img {
   /* Bredde må maks fylde 100% */
   height: auto;
   /* Højden skal tilpasse sig */ }
+
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding: 0;
+  margin: 0; }
+
+.navbar {
+  padding: 10px 40px;
+  color: white; }
+  .navbar .navbar-brand {
+    font-size: 50px;
+    padding: 2%;
+    margin: 0; }
+  .navbar .nav-link {
+    color: white; }
+
+.jumbotron {
+  padding: 0;
+  height: 700px;
+  color: white;
+  background-color: black;
+  border-radius: 0; }
+  .jumbotron .img-fluid {
+    max-width: 200%;
+    height: 100%;
+    opacity: 0.5;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .jumbotron .container {
+    position: absolute; }
+
+.card {
+  border: none; }
+  .card .cardicons {
+    font-size: 90px;
+    color: #8A0BDB;
+    text-align: center;
+    margin: 15px; }
+  .card .card-title {
+    text-align: center;
+    font-size: 40px; }
 
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */

@@ -17,6 +17,7 @@
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -26,6 +27,116 @@
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
+
+
+<!-- NAV START -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Ikon/navn -->
+        <a href="index.html" class="navbar-brand">Studio</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Work</a>
+
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Portfolio</a>
+                        <a href="#" class="dropdown-item">Clients</a>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Expertise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAV SLUT -->
+
+
+    <!-- JUMBOTRON START -->
+    <div class="jumbotron mb-4">
+        <img src="images/bridge-1660417_1920.jpg" class="img-fluid" alt="Responsive image">
+
+        <div class="container">
+            <h1 class="display-4">We build digital
+                products & services</h1>
+            <p class="lead">From small businesses to large companies, we have been successfully creating
+                websites and web applications for our clients.</p>
+            <!-- lead giver en lidt større og grålig tekst, ligesom et resume eller start tekst-->
+            <p class="lead">
+                <a href="#" class="btn btn-primary btn-lg" role="button">See our work</a>
+            </p>
+        </div>
+
+    </div>
+    <!-- JUMBOTRON SLUT -->
+    <!-- IKONER START -->
+
+    <!-- mt-4 = margin-top- 4 creates a margin at the top
+    m for margin, p for padding
+    så det er m/p (top/bund/side)-størrelse
+    -->
+
+    <div class="row">
+        <div class="col-12 col-md-4 mt-3 mt-md-0">
+
+            <div class="card">
+                <i class="cardicons fas fa-trophy"></i>
+                <div class="card-body">
+                    <h5 class="card-title">USER INTERFACE</h5>
+                    <p class="card-text lead">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+
+            <div class="card">
+                <i class="cardicons fas fa-gem"></i>
+                <div class="card-body">
+                    <h5 class="card-title">USER EXPERIENCE</h5>
+                    <p class="card-text  lead">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+
+            <div class="card">
+                <i class="cardicons fas fa-code"></i>
+                <div class="card-body">
+                    <h5 class="card-title">DEVELOPMENT</h5>
+                    <p class="card-text lead">sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAV SLUT -->
+</div>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
