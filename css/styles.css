@@ -11,14 +11,14 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #497DCC;
+  --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #8A0BDB;
+  --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #01FCBA;
+  --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -7228,8 +7228,14 @@ img {
     font-size: 50px;
     padding: 2%;
     margin: 0; }
-  .navbar .nav-link {
-    color: white; }
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border: none;
+  font-size: 25px; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
 
 .jumbotron {
   padding: 0;
@@ -7237,26 +7243,46 @@ img {
   color: white;
   background-color: black;
   border-radius: 0; }
-  .jumbotron .img-fluid {
+  .jumbotron .card-img {
     max-width: 200%;
-    height: 100%;
+    height: 700px;
     opacity: 0.5;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover; }
-  .jumbotron .container {
-    position: absolute; }
+  .jumbotron .card-text {
+    display: none; }
+  .jumbotron .btn-border {
+    max-width: 250px;
+    position: relative;
+    border-radius: 90px;
+    background: linear-gradient(to right, #01FCBA, #497DCC, #8A0BDB);
+    padding: 8px; }
+    .jumbotron .btn-border .btn {
+      background-color: #1F1F1F;
+      border-radius: 90px;
+      border: none;
+      padding: 10px 59px;
+      color: white;
+      line-height: 32px; }
+  .jumbotron .card .card-img-overlay i {
+    padding-top: 260px;
+    text-align: center;
+    font-size: 50px; }
 
 .card {
   border: none; }
   .card .cardicons {
-    font-size: 90px;
-    color: #8A0BDB;
+    font-size: 80px;
+    color: #6f42c1;
     text-align: center;
     margin: 15px; }
   .card .card-title {
     text-align: center;
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: 350; }
+  .card .card-text {
+    padding: 10px; }
 
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */

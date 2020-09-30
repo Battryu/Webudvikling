@@ -53,43 +53,76 @@ img {
 		margin: 0;
 	}
 
-	.nav-link {
-		color: white;
-	}
 }
 
-.jumbotron {
-	padding: 0;
-	height: 700px;
+.navbar-dark .navbar-toggler {
 	color: white;
-	background-color: black;
-	border-radius: 0;
+	border: none;
+	font-size: 25px;
+}
 
-	.img-fluid {
-		max-width: 200%;
-		height: 100%;
-		opacity: 0.5;
-		background-position: left;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 1)
+}
 
-	.container {
-		position: absolute;
-	}
+
+.jumbotron {
+padding: 0;
+height: 700px;
+color: white;
+background-color: black;
+border-radius: 0;
+
+.card-img {
+    max-width: 200%;
+    height: 700px;
+    opacity: 0.5;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-text {
+    display: none;
+}
+.btn-border {
+    max-width: 250px;
+    position: relative;
+    border-radius: 90px;
+    background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
+    padding: 8px;
+
+    .btn {
+        background-color: $siteblack;
+        border-radius: 90px;
+        border: none;
+        padding: 10px 59px;
+        color: white;
+        line-height: 32px;
+    }
+}
+.card .card-img-overlay i {
+    padding-top: 260px;
+    text-align: center;
+    font-size: 50px;
+}
+
 }
 
 .card {
-	border: none;
+border: none;
 
-	.cardicons {
-		font-size: 90px;
-		color: $purple;
-		text-align: center;
-		margin: 15px;
-	}
-	.card-title {
-		text-align: center;
-		font-size: 40px;
+.cardicons {
+    font-size: 80px;
+    color: $purple;
+    text-align: center;
+    margin: 15px;
+}
+.card-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 350;
+}
+.card-text {
+    padding: 10px;
 }
 }
