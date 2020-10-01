@@ -39,6 +39,14 @@ img {
 	height: auto; /* Højden skal tilpasse sig */
 }
 
+@mixin quicktransition($milsecs: 300ms) {
+  -webkit-transition: all $milsecs ease-in-out;
+  -moz-transition: all $milsecs ease-in-out;
+  -o-transition: all $milsecs ease-in-out;
+  transition: all $milsecs ease-in-out;
+}
+
+
 .container-fluid {
 	padding: 0;
 	margin: 0;
@@ -47,11 +55,16 @@ img {
 	padding: 10px 40px;
 	color: white;
 
-	.navbar-brand {
-		font-size: 50px;
-		padding: 2%;
-		margin: 0;
-	}
+  .navbar-brand {
+      font-size: 50px;
+      padding: 2%;
+      margin: 0;
+    @include quicktransition();
+  }
+  .navbar-brand:hover {
+    color: $sitegreen;
+    @include quicktransition();
+  }
 
 }
 
@@ -64,65 +77,90 @@ img {
 .navbar-dark .navbar-nav .nav-link {
 	color: rgba(255, 255, 255, 1)
 }
+.nav-link:hover{
+  color: $sitegreen;
+  @include quicktransition();
+}
 
 
 .jumbotron {
-padding: 0;
-height: 700px;
-color: white;
-background-color: black;
-border-radius: 0;
+  padding: 0;
+  height: 700px;
+  color: white;
+  background-color: black;
+  border-radius: 0;
 
-.card-img {
+  .card-img {
     max-width: 200%;
     height: 700px;
     opacity: 0.5;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.card-text {
+  }
+
+  .card-text {
     display: none;
-}
-.btn-border {
+  }
+
+  .btn-border {
     max-width: 250px;
     position: relative;
     border-radius: 90px;
     background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
     padding: 8px;
+    @include quicktransition();
 
     .btn {
-        background-color: $siteblack;
-        border-radius: 90px;
-        border: none;
-        padding: 10px 59px;
-        color: white;
-        line-height: 32px;
+      background-color: $siteblack;
+      border-radius: 90px;
+      border: none;
+      padding: 10px 59px;
+      color: white;
+      line-height: 32px;
+      @include quicktransition();
     }
-}
-.card .card-img-overlay i {
-    padding-top: 260px;
-    text-align: center;
-    font-size: 50px;
+  }
+  .btn-border:hover {
+    background: linear-gradient(to right, lighten($sitegreen, 30), lighten($siteblue, 15), lighten($sitepurple, 20));
+    @include quicktransition();
+
+    .btn {
+      color: $sitegreen;
+      background-color: lighten($siteblack, 10);
+      @include quicktransition();
+    }
+  }
 }
 
-}
+  .card {
+    border: none;
 
-.card {
-border: none;
+    .cardicons {
+      font-size: 80px;
+      color: $purple;
+      text-align: center;
+      margin: 15px;
+    }
 
-.cardicons {
-    font-size: 80px;
-    color: $purple;
-    text-align: center;
-    margin: 15px;
+    .card-title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 350;
+    }
+
+    .card-text {
+      margin: 10px;
+    }
+  }
+
+.arrowdown {
+  padding-top: 260px;
+  padding-left: 48%;
+  font-size: 50px;
+  @include quicktransition();
 }
-.card-title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 350;
-}
-.card-text {
-    padding: 10px;
-}
+.arrowdown:hover {
+  color: $sitegreen;
+  @include quicktransition();
 }

@@ -7227,7 +7227,17 @@ img {
   .navbar .navbar-brand {
     font-size: 50px;
     padding: 2%;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .navbar .navbar-brand:hover {
+    color: #01FCBA;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
 
 .navbar-dark .navbar-toggler {
   color: white;
@@ -7236,6 +7246,13 @@ img {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white; }
+
+.nav-link:hover {
+  color: #01FCBA;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
 
 .jumbotron {
   padding: 0;
@@ -7257,18 +7274,35 @@ img {
     position: relative;
     border-radius: 90px;
     background: linear-gradient(to right, #01FCBA, #497DCC, #8A0BDB);
-    padding: 8px; }
+    padding: 8px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
     .jumbotron .btn-border .btn {
       background-color: #1F1F1F;
       border-radius: 90px;
       border: none;
       padding: 10px 59px;
       color: white;
-      line-height: 32px; }
-  .jumbotron .card .card-img-overlay i {
-    padding-top: 260px;
-    text-align: center;
-    font-size: 50px; }
+      line-height: 32px;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+  .jumbotron .btn-border:hover {
+    background: linear-gradient(to right, #97ffe3, #85a8dd, #b856f6);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .jumbotron .btn-border:hover .btn {
+      color: #01FCBA;
+      background-color: #393939;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
 
 .card {
   border: none; }
@@ -7282,7 +7316,23 @@ img {
     font-size: 40px;
     font-weight: 350; }
   .card .card-text {
-    padding: 10px; }
+    margin: 10px; }
+
+.arrowdown {
+  padding-top: 260px;
+  padding-left: 48%;
+  font-size: 50px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
+.arrowdown:hover {
+  color: #01FCBA;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
 
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */
