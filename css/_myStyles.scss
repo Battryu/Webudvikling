@@ -52,86 +52,94 @@ img {
 	margin: 0;
 }
 .navbar {
-	padding: 10px 40px;
-	color: white;
+  padding: 10px 40px;
+  color: white;
 
   .navbar-brand {
-      font-size: 50px;
-      padding: 2%;
-      margin: 0;
+    font-size: 50px;
+    padding: 2%;
+    margin: 0;
     @include quicktransition();
   }
+
   .navbar-brand:hover {
     color: $sitegreen;
     @include quicktransition();
   }
 
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1)
+  }
+
+  .nav-link:hover {
+    color: $sitegreen;
+    @include quicktransition();
+  }
+}
+.bg-dark {
+  background-color: $siteblack !important;
 }
 
 .navbar-dark .navbar-toggler {
-	color: white;
-	border: none;
-	font-size: 25px;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-	color: rgba(255, 255, 255, 1)
-}
-.nav-link:hover{
-  color: $sitegreen;
-  @include quicktransition();
-}
-
-
-.jumbotron {
-  padding: 0;
-  height: 700px;
   color: white;
-  background-color: black;
-  border-radius: 0;
-
-  .card-img {
-    max-width: 200%;
-    height: 700px;
-    opacity: 0.5;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .card-text {
-    display: none;
-  }
-
-  .btn-border {
-    max-width: 250px;
-    position: relative;
-    border-radius: 90px;
-    background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
-    padding: 8px;
-    @include quicktransition();
-
-    .btn {
-      background-color: $siteblack;
-      border-radius: 90px;
-      border: none;
-      padding: 10px 59px;
-      color: white;
-      line-height: 32px;
-      @include quicktransition();
-    }
-  }
-  .btn-border:hover {
-    background: linear-gradient(to right, lighten($sitegreen, 30), lighten($siteblue, 15), lighten($sitepurple, 20));
-    @include quicktransition();
-
-    .btn {
-      color: $sitegreen;
-      background-color: lighten($siteblack, 10);
-      @include quicktransition();
-    }
-  }
+  border: none;
+  font-size: 25px;
 }
+.navbar-dark .navbar-toggler:hover {
+  color: $sitegreen;
+}
+
+  .jumbotron {
+    padding: 0;
+    height: 700px;
+    color: white;
+    background-color: black;
+    border-radius: 0;
+
+    .card-img {
+      max-width: 200%;
+      height: 700px;
+      opacity: 0.5;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .card-text {
+      display: none;
+    }
+
+    .btn-border {
+      max-width: 250px;
+      position: relative;
+      border-radius: 90px;
+      background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
+      padding: 8px;
+      @include quicktransition();
+
+      .btn {
+        background-color: $siteblack;
+        border-radius: 90px;
+        border: none;
+        padding: 10px 59px;
+        color: white;
+        line-height: 32px;
+        @include quicktransition();
+      }
+    }
+
+    .btn-border:hover {
+      background: linear-gradient(to right, lighten($sitegreen, 30), lighten($siteblue, 15), lighten($sitepurple, 20));
+      @include quicktransition();
+
+      .btn {
+        color: $sitegreen;
+        background-color: lighten($siteblack, 10);
+        @include quicktransition();
+      }
+    }
+  }
 
   .card {
     border: none;
@@ -154,13 +162,14 @@ img {
     }
   }
 
-.arrowdown {
-  padding-top: 260px;
-  padding-left: 48%;
-  font-size: 50px;
-  @include quicktransition();
-}
-.arrowdown:hover {
-  color: $sitegreen;
-  @include quicktransition();
-}
+  .arrowdown {
+    padding-top: 240px;
+    padding-left: 48%;
+    font-size: 50px;
+    @include quicktransition();
+  }
+
+  .arrowdown:hover {
+    color: $sitegreen;
+    @include quicktransition();
+  }

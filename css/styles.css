@@ -7238,21 +7238,25 @@ img {
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out; }
+  .navbar .navbar-dark .navbar-nav .nav-link {
+    color: white; }
+  .navbar .nav-link:hover {
+    color: #01FCBA;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+
+.bg-dark {
+  background-color: #1F1F1F !important; }
 
 .navbar-dark .navbar-toggler {
   color: white;
   border: none;
   font-size: 25px; }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white; }
-
-.nav-link:hover {
-  color: #01FCBA;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out; }
+.navbar-dark .navbar-toggler:hover {
+  color: #01FCBA; }
 
 .jumbotron {
   padding: 0;
@@ -7319,7 +7323,7 @@ img {
     margin: 10px; }
 
 .arrowdown {
-  padding-top: 260px;
+  padding-top: 240px;
   padding-left: 48%;
   font-size: 50px;
   -webkit-transition: all 300ms ease-in-out;
@@ -7340,6 +7344,25 @@ img {
 /* Her henter vi vores tablet version _tablet.scss */
 /* Her har vi styles til vores tablet version */
 /* ------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 5px 40px; }
+    .navbar .navbar-brand {
+      font-size: 40px; }
+  .jumbotron {
+    height: 900px; }
+    .jumbotron .card-img {
+      height: 900px; }
+    .jumbotron .card-title {
+      padding-top: 180px !important;
+      font-size: 50px; }
+    .jumbotron .card-text {
+      display: block;
+      text-align: center;
+      padding: 15px 40px 50px; }
+  .arrowdown {
+    padding-top: 240px; } }
+
 /* Her henter vi vores computer version _tablet.scss */
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
