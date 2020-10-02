@@ -54,3 +54,21 @@ img {
 	background-size: cover;
 	background-position: center;
 }
+
+/* NEWSLETTER */
+
+form {
+	.form-group {
+		input {
+			font-size: 15px;
+		}
+	}
+
+	.newsletter_btn {
+		padding: 10px 50px !important;
+	}
+
+	.newsletter_info {
+		padding: 20px;
+	}
+}
