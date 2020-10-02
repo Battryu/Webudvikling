@@ -1,7 +1,20 @@
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
 
-$computer: "screen and (min-width: 1200px)";
+$computer: "screen and (min-width: 992px)";
 @media #{$computer} {
+
+  /* NEWSLETTER */
+  .form-group_news
+  {
+    padding:0 5px;
+
+    &:last-of-type {
+
+      padding-right: 13px;
+
+    }
+  }
+
 
 }
