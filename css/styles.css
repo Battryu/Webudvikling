@@ -7231,6 +7231,13 @@ form .newsletter_btn {
 form .newsletter_info {
   padding: 20px; }
 
+.font_awesome_news {
+  font-size: 20px !important;
+  padding: 12px 10px;
+  margin: 0 5px; }
+  .font_awesome_news:last-child {
+    margin: 0 0 0 5px; }
+
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN RESPONSIVE CSS START */
