@@ -82,3 +82,21 @@ form {
 		margin: 0 0 0 5px;
 	}
 }
+
+.newsletter_img {
+	background-image: url("../img/newsletter_bridge.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* FOOTER */
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+
+	&:hover {
+		color: lightgray;
+		text-decoration: none;
+	}
+}

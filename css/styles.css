@@ -7238,6 +7238,19 @@ form .newsletter_info {
   .font_awesome_news:last-child {
     margin: 0 0 0 5px; }
 
+.newsletter_img {
+  background-image: url("../img/newsletter_bridge.jpg");
+  background-size: cover;
+  background-position: center; }
+
+/* FOOTER */
+.footer-link {
+  color: white;
+  text-decoration: none; }
+  .footer-link:hover {
+    color: lightgray;
+    text-decoration: none; }
+
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN RESPONSIVE CSS START */
