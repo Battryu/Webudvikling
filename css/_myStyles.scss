@@ -10,11 +10,14 @@
 
 body {
 	margin: 0; /* Ingen kanter i siden af browser */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0; /* Ingen ydre margen fra overskrifter */
 	padding: 0; /* Ingen indre margen fra overskrifter */
+	font-family: 'Nunito', sans-serif;
 }
 
 ul, ol {
@@ -173,3 +176,63 @@ img {
     color: $sitegreen;
     @include quicktransition();
   }
+
+
+
+
+
+
+
+/* ABOUT US */
+
+.about_img {
+	background-image: url("../img/workspace.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* NEWSLETTER */
+
+form {
+	.form-group {
+		input {
+			font-size: 15px;
+		}
+	}
+
+	.newsletter_btn {
+		padding: 10px 50px !important;
+	}
+
+	.newsletter_info {
+		padding: 20px;
+	}
+}
+
+.font_awesome_news {
+	font-size: 20px !important;
+	padding: 12px 10px;
+	margin: 0 5px;
+
+	&:last-child {
+		margin: 0 0 0 5px;
+	}
+}
+
+.newsletter_img {
+	background-image: url("../img/newsletter_bridge.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* FOOTER */
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+
+	&:hover {
+		color: lightgray;
+		text-decoration: none;
+	}
+}
