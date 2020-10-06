@@ -7215,6 +7215,132 @@ img {
   height: auto;
   /* Højden skal tilpasse sig */ }
 
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding: 0;
+  margin: 0; }
+
+.navbar {
+  padding: 10px 40px;
+  color: white; }
+  .navbar .navbar-brand {
+    font-size: 50px;
+    padding: 2%;
+    margin: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .navbar .navbar-brand:hover {
+    color: #01FCBA;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .navbar .navbar-dark .navbar-nav .nav-link {
+    color: white; }
+  .navbar .nav-link:hover {
+    color: #01FCBA;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+
+.bg-dark {
+  background-color: #1F1F1F !important; }
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border: none;
+  font-size: 25px; }
+
+.navbar-dark .navbar-toggler:hover {
+  color: #01FCBA; }
+
+.jumbotron {
+  padding: 0;
+  height: 700px;
+  color: white;
+  background-color: black;
+  border-radius: 0; }
+  .jumbotron .card-img {
+    max-width: 200%;
+    height: 700px;
+    opacity: 0.5;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .jumbotron .card-text {
+    display: none; }
+  .jumbotron .btn-border {
+    max-width: 250px;
+    position: relative;
+    border-radius: 90px;
+    background: linear-gradient(to right, #01FCBA, #497DCC, #8A0BDB);
+    padding: 8px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .jumbotron .btn-border .btn {
+      background-color: #1F1F1F;
+      border-radius: 90px;
+      border: none;
+      padding: 10px 59px;
+      color: white;
+      line-height: 32px;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+  .jumbotron .btn-border:hover {
+    background: linear-gradient(to right, #97ffe3, #85a8dd, #b856f6);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .jumbotron .btn-border:hover .btn {
+      color: #01FCBA;
+      background-color: #393939;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+
+.card {
+  border: none; }
+  .card .cardicons {
+    font-size: 80px;
+    color: #6f42c1;
+    text-align: center;
+    margin: 15px; }
+  .card .card-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 350; }
+  .card .card-text {
+    margin: 10px; }
+
+.arrowdown {
+  padding-top: 240px;
+  padding-left: 48%;
+  font-size: 50px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
+.arrowdown:hover {
+  color: #01FCBA;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
 /* SUBSCRIPTIONS */
 .bg-gradient-primary {
   background-image: linear-gradient(#0BDBA3, #8A0BDB); }
@@ -7227,6 +7353,11 @@ img {
 
 /*QUOTE*/
 /*PORTFOLIO*/
+.header_img {
+  background-image: url("../images/bridge-1660417_1920.jpg");
+  background-position: center;
+  background-size: cover; }
+
 /* ABOUT US */
 .about_img {
   background-image: url("../img/workspace.jpg");
@@ -7269,6 +7400,25 @@ form .newsletter_info {
 /* Her henter vi vores tablet version _tablet.scss */
 /* Her har vi styles til vores tablet version */
 /* ------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 5px 40px; }
+    .navbar .navbar-brand {
+      font-size: 40px; }
+  .jumbotron {
+    height: 900px; }
+    .jumbotron .card-img {
+      height: 900px; }
+    .jumbotron .card-title {
+      padding-top: 180px !important;
+      font-size: 50px; }
+    .jumbotron .card-text {
+      display: block;
+      text-align: center;
+      padding: 15px 40px 50px; }
+  .arrowdown {
+    padding-top: 240px; } }
+
 /* Her henter vi vores computer version _tablet.scss */
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
