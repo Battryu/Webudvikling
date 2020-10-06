@@ -94,6 +94,24 @@ img {
   color: $sitegreen;
 }
 
+.btn-border-card
+{
+  background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
+  padding: 5px;
+  width: fit-content;
+}
+
+.btn-white-card {
+  background: white;
+  padding: 4px;
+  width: fit-content;
+
+  .btn-light {
+    background-color: white;
+    border: white;
+  }
+}
+
   .jumbotron {
     padding: 0;
     height: 700px;
@@ -144,7 +162,6 @@ img {
       }
     }
   }
-
 
 
 
@@ -199,13 +216,6 @@ img {
 
 /*PORTFOLIO*/
 
-
-.header_img
-{
-  background-image: url("../images/bridge-1660417_1920.jpg");
-  background-position:center;
-  background-size: cover;
-}
 
 
 /* ABOUT US */
