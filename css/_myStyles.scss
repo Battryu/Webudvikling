@@ -57,6 +57,7 @@ img {
 .navbar {
   padding: 10px 40px;
   color: white;
+  z-index: 99;
 
   .navbar-brand {
     font-size: 50px;
@@ -91,6 +92,24 @@ img {
 }
 .navbar-dark .navbar-toggler:hover {
   color: $sitegreen;
+}
+
+.btn-border-card
+{
+  background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
+  padding: 5px;
+  width: fit-content;
+}
+
+.btn-white-card {
+  background: white;
+  padding: 4px;
+  width: fit-content;
+
+  .btn-light {
+    background-color: white;
+    border: white;
+  }
 }
 
   .jumbotron {
@@ -146,7 +165,6 @@ img {
 
 
 
-
   .card {
     border: none;
 
@@ -193,18 +211,17 @@ img {
 	border: 3px solid #8A0BDB;
 }
 
+.whiteborder{
+	border: 5px solid white;
+    border-bottom: 0;
+    border-top:0;
+}
+
 
 /*QUOTE*/
 
 /*PORTFOLIO*/
 
-
-.header_img
-{
-  background-image: url("../images/bridge-1660417_1920.jpg");
-  background-position:center;
-  background-size: cover;
-}
 
 
 /* ABOUT US */
