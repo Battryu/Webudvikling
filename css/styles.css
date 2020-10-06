@@ -7226,7 +7226,8 @@ img {
 
 .navbar {
   padding: 10px 40px;
-  color: white; }
+  color: white;
+  z-index: 99; }
   .navbar .navbar-brand {
     font-size: 50px;
     padding: 2%;
