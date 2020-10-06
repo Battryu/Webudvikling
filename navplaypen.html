@@ -1,10 +1,5 @@
-<!-- Instruktion til webbrowser om at vi kører HTML5 -->
 <!DOCTYPE html>
-
-<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
-
-<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
 <head>
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
@@ -17,17 +12,19 @@
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="css/navplaypen.scss" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
 
@@ -147,125 +144,7 @@
 </div>
 
 
-
-
-
-
-<!-- ABOUT US START -->
-<div class="container mt-1">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 about_img p-4 p-md-3 mb-1 mb-md-0 container-fluid">
-        </div>
-
-            <div class="col-12 col-sm-12 col-md-6 pl-md-1 pt-1 px-2 px-md-1 pt-md-0">
-            <h1 class="text-dark mb-1">ABOUT US</h1>
-            <p class="text-light">Man signs moving of may may made above likeness kind fowl together gathered third
-                their
-                itself, earth
-                void signs Thing waters. To give fourth shall days stars. Male darkness, it appear them the there which fruit unto creepeth years subdue day bearing man given she’d grass so them.
-                <br><br>
-                From above dominion place she’d the itself fish let creature kind. Sixth moveth whose. Spirit.
-                Seasons fruit that earth dry be fly gathered yielding made his itself firmament creeping dry abundantly lights make.</p>
-        </div>
-    </div>
-</div>
-
-<!-- ABOUT US END -->
-
-
-<!-- NEWSLETTER START -->
-
-<div class="container-fluid newsletter_img bg-primary mt-3 py-2 py-md-3">
-
-    <div class="container">
-        <h3 class="text-center text-white mb-1">
-            Subscribe to our
-            newsletter to get
-            the latest news
-        </h3>
-
-            <form class="row mx-1 mx-md-0 align-items-center justify-content-center">
-
-
-                <div
-                        class="form-group col-12 col-sm-12 col-md-6 col-lg-4 m-0 form-group_news">
-                    <label class="d-none" for="name">name</label>
-                    <input type="text" class="form-control newsletter_info shadow" id="name" placeholder="Name">
-                </div>
-                <div class="form-group col-12 col-sm-12 col-md-6 col-lg-4 m-0 form-group_news mt-1 m-md-0">
-                    <label class="d-none" for="email">Email address</label>
-                    <input type="email" class="form-control newsletter_info shadow" id="email" placeholder="Your email">
-                </div>
-                <button type="submit"
-                        class="mt-1 m-lg-0 btn btn-secondary rounded-pill text-white newsletter_btn shadow">
-                    SUBSCRIBE
-                </button>
-
-            </form>
-
-        <div class="row justify-content-center mt-2">
-
-            <div class="bg-white badge rounded-circle shadow font_awesome_news">
-                <i class="fab fa-facebook-f fa-fw"></i>
-            </div>
-            <div class="bg-white badge rounded-circle shadow font_awesome_news">
-                <i class="fab fa-youtube fa-fw"></i>
-            </div>
-            <div class="bg-white badge rounded-circle shadow font_awesome_news">
-                <i class="fab fa-instagram fa-fw"></i>
-            </div>
-            <div class="bg-white badge rounded-circle shadow font_awesome_news">
-                <i class="fab fa-twitter fa-fw"></i>
-            </div>
-            <div class="bg-white badge rounded-circle shadow font_awesome_news">
-                <i class="fab fa-linkedin-in fa-fw"></i>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- NEWSLETTER END -->
-
-
-<!-- FOOTER START -->
-
-<footer class="container-fluid bg-dark">
-
-    <div class="container">
-
-    <div class="row justify-content-center text-center">
-
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">Home</a>
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">About Us</a>
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">Our Work</a>
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">Expertise</a>
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">Price</a>
-        <a class="p-1 col-12 col-md-auto footer-link" href="#">Contact</a>
-
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-</footer>
-
-
-<!-- FOOTER END -->
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     $(function () {
 
