@@ -7215,15 +7215,6 @@ img {
   height: auto;
   /* Højden skal tilpasse sig */ }
 
-
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-  padding: 0;
-  margin: 0; }
-
 .navbar {
   padding: 10px 40px;
   color: white;
@@ -7276,22 +7267,13 @@ img {
     border: white; }
 
 .jumbotron {
-  padding: 0;
-  height: 700px;
-  color: white;
-  background-color: black;
   border-radius: 0; }
   .jumbotron .card-img {
     max-width: 200%;
-    height: 700px;
-    opacity: 0.5;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .jumbotron .card-text {
-    display: none; }
+    height: 800px;
+    opacity: 0.5; }
   .jumbotron .btn-border {
-    max-width: 250px;
+    max-width: 300px;
     position: relative;
     border-radius: 90px;
     background: linear-gradient(to right, #01FCBA, #497DCC, #8A0BDB);
@@ -7304,7 +7286,7 @@ img {
       background-color: #1F1F1F;
       border-radius: 90px;
       border: none;
-      padding: 10px 59px;
+      padding: 10px 79px;
       color: white;
       line-height: 32px;
       -webkit-transition: all 300ms ease-in-out;
@@ -7328,20 +7310,11 @@ img {
 .card {
   border: none; }
   .card .cardicons {
-    font-size: 80px;
-    color: #6f42c1;
-    text-align: center;
-    margin: 15px; }
-  .card .card-title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 350; }
-  .card .card-text {
-    margin: 10px; }
+    font-size: 70px;
+    text-align: center; }
 
 .arrowdown {
-  padding-top: 240px;
-  padding-left: 48%;
+  padding-left: 49%;
   font-size: 50px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -7422,16 +7395,7 @@ form .newsletter_info {
   .jumbotron {
     height: 900px; }
     .jumbotron .card-img {
-      height: 900px; }
-    .jumbotron .card-title {
-      padding-top: 180px !important;
-      font-size: 50px; }
-    .jumbotron .card-text {
-      display: block;
-      text-align: center;
-      padding: 15px 40px 50px; }
-  .arrowdown {
-    padding-top: 240px; } }
+      height: 900px; } }
 
 /* Her henter vi vores computer version _tablet.scss */
 /* Her har vi styles til vores computer version */

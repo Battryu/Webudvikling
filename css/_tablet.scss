@@ -11,29 +11,12 @@ $tablet: "screen and (min-width: 768px)";
   }
 }
 
-
 .jumbotron {
   height: 900px;
 
   .card-img {
     height: 900px;
   }
-
-  .card-title {
-    padding-top: 180px !important;
-    font-size: 50px;
-  }
-
-  .card-text {
-    display: block;
-    text-align: center;
-    padding: 15px 40px 50px;
-  }
 }
-.arrowdown {
-  padding-top: 240px;
-}
-
-
 
 }

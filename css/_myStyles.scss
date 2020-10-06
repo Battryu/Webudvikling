@@ -50,10 +50,7 @@ img {
 }
 
 
-.container-fluid {
-	padding: 0;
-	margin: 0;
-}
+
 .navbar {
   padding: 10px 40px;
   color: white;
@@ -113,27 +110,16 @@ img {
 }
 
   .jumbotron {
-    padding: 0;
-    height: 700px;
-    color: white;
-    background-color: black;
     border-radius: 0;
 
     .card-img {
       max-width: 200%;
-      height: 700px;
+      height: 800px;
       opacity: 0.5;
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .card-text {
-      display: none;
     }
 
     .btn-border {
-      max-width: 250px;
+      max-width: 300px;
       position: relative;
       border-radius: 90px;
       background: linear-gradient(to right, $sitegreen, $siteblue, $sitepurple,);
@@ -144,7 +130,7 @@ img {
         background-color: $siteblack;
         border-radius: 90px;
         border: none;
-        padding: 10px 59px;
+        padding: 10px 79px;
         color: white;
         line-height: 32px;
         @include quicktransition();
@@ -163,32 +149,17 @@ img {
     }
   }
 
-
-
   .card {
     border: none;
 
     .cardicons {
-      font-size: 80px;
-      color: $purple;
+      font-size: 70px;
       text-align: center;
-      margin: 15px;
-    }
-
-    .card-title {
-      text-align: center;
-      font-size: 40px;
-      font-weight: 350;
-    }
-
-    .card-text {
-      margin: 10px;
     }
   }
 
   .arrowdown {
-    padding-top: 240px;
-    padding-left: 48%;
+    padding-left: 49%;
     font-size: 50px;
     @include quicktransition();
   }
