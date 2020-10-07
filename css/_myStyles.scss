@@ -174,9 +174,7 @@ img {
 .bg-gradient-primary{
 	background-image: linear-gradient(#0BDBA3, #8A0BDB);
 }
-.bg-gradient-right{
-	background-image: linear-gradient(to right, #0BDBA3, #8A0BDB);
-}
+
 
 .purpleborder{
 	border: 3px solid #8A0BDB;
@@ -190,6 +188,24 @@ img {
 
 
 /*QUOTE*/
+
+.bg-gradient-right{
+  background-image: url("images/workplace-1245776_1920.jpg"), linear-gradient(to right, #0BDBA3, #8A0BDB);
+}
+
+.carousel-indicators li { /*Styling af knapper for neden i carousel */
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.carousel-inner > .carousel-item > img {
+  height: 100px;
+}
+
+.carousel-inner > .carousel-item > img { /*Centrering af billede i carousel*/
+  margin: 0 auto;
+}
 
 /*PORTFOLIO*/
 
