@@ -182,13 +182,17 @@ img {
 
 /*QUOTE*/
 
-.bg-gradient-right{
-  background-image: url("images/workplace-1245776_1920.jpg"), linear-gradient(to right, #0BDBA3, #8A0BDB);
+
+.bg-quote {
+  background-image: url("../images/workplace-1245776_1920.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .carousel-indicators li { /*Styling af knapper for neden i carousel */
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
+  margin:0 5px;
   border-radius: 10px;
 }
 
